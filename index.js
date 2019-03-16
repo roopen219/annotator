@@ -119,6 +119,6 @@ io.on('connection', function(socket) {
     });
 });
 
-server.listen(process.env.PORT, process.env.HOST, () =>
+server.listen(4000, process.env.HOST, () =>
     console.log(`Annotator listening on port ${process.env.PORT}!`)
 );
