@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <style>
+            body {
+                min-height: 100vh;
+            }
+
+            .spacer {
+                margin-bottom: 20px;
+            }
+
+            #image {
+                position: relative;
+                top: 50px;
+                left: 50px;
+                margin-bottom: 50px;
+            }
+
+            #image:hover {
+                cursor: crosshair;
+            }
+
+            #guide_x,
+            #guide_y {
+                pointer-events: none;
+                position: fixed;
+                background: #000;
+            }
+
+            #guide_x {
+                left: 0;
+                right: 0;
+                height: 1px;
+                display: none;
+            }
+
+            #guide_y {
+                top: 0;
+                bottom: 0;
+                width: 1px;
+                display: none;
+            }
+        </style>
+
+        <title>Annotator</title>
+    </head>
+    <body>
+        <img id="image" src="" />
+
+        <div id="guide_x"></div>
+        <div id="guide_y"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+        <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/index.js"></script>
+    </body>
+</html>

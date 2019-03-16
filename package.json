@@ -1,25 +1,37 @@
 {
-  "name": "annotator",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "deploy": "pm2 deploy production update"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/roopen219/annotator.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/roopen219/annotator/issues"
-  },
-  "homepage": "https://github.com/roopen219/annotator#readme",
-  "dependencies": {
-    "express": "^4.16.4",
-    "redis": "^2.8.0"
-  }
+    "name": "annotator",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon index.js",
+        "start": "node index.js",
+        "deploy": "pm2 deploy production update"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/roopen219/annotator.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/roopen219/annotator/issues"
+    },
+    "homepage": "https://github.com/roopen219/annotator#readme",
+    "dependencies": {
+        "dotenv": "^7.0.0",
+        "express": "^4.16.4",
+        "lodash": "^4.17.11",
+        "mongodb": "^3.1.13",
+        "redis": "^2.8.0"
+    },
+    "devDependencies": {
+        "gm": "^1.23.1",
+        "socket.io": "^2.2.0"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "singleQuote": true
+    }
 }
